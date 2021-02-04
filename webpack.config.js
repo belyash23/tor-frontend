@@ -88,7 +88,7 @@ if (tars.config.js.useBabel) {
 }
 
 /**
- * Add to each entry point entries for webpack dev-server and webpack-hot-middleware
+ * add to each entry point entries for webpack dev-server and webpack-hot-middleware
  * @param  {Object} entryConfig
  * @return {Object}
  */
