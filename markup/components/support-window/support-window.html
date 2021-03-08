@@ -1,0 +1,23 @@
+<div id="support-window" class="modal support-window">
+    <p class="support-window__title">Сообщить об ошибке</p>
+    <form class="support-form">
+        <div class="support-form__item">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="support-form__email">
+        </div>
+        <div class="support-form__item">
+            <label for="error-type">Тип ошибки*:</label>
+            <select id="error-type" class="support-form__error-type" required>
+                <option value="">Ошибка сайта</option>
+                <option value="">Предложение ресурса</option>
+                <option value="">Исправление ресурса</option>
+            </select>
+            {{Icon iconName='arrow' className='support-form__arrow'}}
+        </div>
+        <div class="support-form__item">
+            <label for="description">Описание проблемы*:</label>
+            <textarea id="description" class="support-form__description" required></textarea>
+        </div>
+        <input type="submit" class="support-form__send" value="Отправить">
+    </form>
+</div>
