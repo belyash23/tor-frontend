@@ -1,6 +1,3 @@
-.support-window {
-    font-family: Roboto;
-}
 .support-window__title {
     width: 100%;
     text-align: center;
@@ -75,7 +72,7 @@
     width: 100px;
     border-radius: 20px;
     height: 40px;
-    background: hsl(183, 70%, 46%);
+    background: $base-green;
     color: hsl(0, 0%, 100%);
     border: none;
     cursor: pointer;
