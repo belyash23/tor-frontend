@@ -30,3 +30,10 @@
 }
 
 // You can add your own mixins here:
+
+@mixin base-block {
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    background: $base-green;
+}
