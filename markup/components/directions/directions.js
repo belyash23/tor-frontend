@@ -1,3 +1,4 @@
+import vars from 'static/js/vars';
 $.ajax('http://tor-obr.ru/api/direction', {
 
 }).done((response) => {
@@ -20,7 +21,7 @@ $.ajax('http://tor-obr.ru/api/direction', {
         const images = $(`<div class="direction-info__images"></div>`);
 
         direction.images.forEach(image => {
-            images.append($(`<img class="direction-info__image" src="${image.src}">`));
+            images.append($(`<img class="direction-info__image" src="${vars.host+image.src}">`));
         });
 
         $('.direction-info').prepend(description);
