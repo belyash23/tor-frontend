@@ -122,7 +122,8 @@ module.exports = {
     entry: prepareEntryPoints({
         index: path.resolve(`${cwd}/markup/${staticFolderName}/js/index.js`),
         directions: path.resolve(`${cwd}/markup/${staticFolderName}/js/directions.js`),
-        resource: path.resolve(`${cwd}/markup/${staticFolderName}/js/resource.js`)
+        resource: path.resolve(`${cwd}/markup/${staticFolderName}/js/resource.js`),
+        resources: path.resolve(`${cwd}/markup/${staticFolderName}/js/resources.js`)
     }),
 
     output: {

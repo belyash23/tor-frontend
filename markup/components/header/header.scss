@@ -1,0 +1,31 @@
+header {
+    background: hsl(0, 0%, 20%);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100px;
+    line-height: 100px;
+    align-content: center;
+}
+.title {
+    display: flex;
+    align-content: center;
+}
+.title__text {
+    font-size: 3em;
+}
+.title__logo {
+    height: 100px;
+}
+ul {
+    list-style: none;
+}
+.menu {
+    display: flex;
+    float: right;
+    font-size: 1.5em;
+    margin-right: 50px;
+}
+.menu__item {
+    margin-left: 50px;
+}
