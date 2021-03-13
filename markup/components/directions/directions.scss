@@ -47,14 +47,14 @@
 }
 .direction-info__images {
     float: right;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 50px;
     display: flex;
     flex-direction: column;
 }
 .direction-info__image {
     width: 275px;
-    margin-top: 50px;
+    margin-top: 30px;
     border-radius: 20px;
 }
 .direction-info__to-resources {
@@ -69,4 +69,16 @@
     line-height: 50px;
     font-size: 1.2em;
     border-radius: 20px;
+}
+@media screen and (max-height: 880px) {
+    .directions {
+        height: calc(100vh - #{$header-height} + 30px - #{$footer-height} + 30px);
+    }
+    .direction-info__image {
+        width: 240px;
+        margin-top: 20px;
+    }
+    .direction-info__to-resources {
+        bottom: 15px;
+    }
 }

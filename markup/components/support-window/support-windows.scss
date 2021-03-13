@@ -75,5 +75,9 @@
     background: $base-green;
     color: hsl(0, 0%, 100%);
     border: none;
-    cursor: pointer;
+    // cursor: pointer;
+}
+.support-window__error {
+    color: red;
+    text-align: center;
 }

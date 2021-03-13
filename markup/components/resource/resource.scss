@@ -5,6 +5,11 @@ main.resource {
     display: flex;
     justify-content: space-around;
 }
+@media screen and (max-height: 880px) {
+    main.resource {
+        min-height: calc(100vh - 2px - #{$header-height} + 30px - #{$footer-height} + 30px);
+    }
+}
 .resource__images {
     margin-top: 50px;
     width: 300px;

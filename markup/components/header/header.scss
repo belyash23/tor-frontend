@@ -29,3 +29,14 @@ ul {
 .menu__item {
     margin-left: 50px;
 }
+@media screen and (max-height: 880px) {
+    header {
+        height: 80px;
+        padding: 5px;
+        padding-left: 10px;
+        line-height: 80px;
+    }
+    .title__logo {
+        height: 80px;
+    }
+}

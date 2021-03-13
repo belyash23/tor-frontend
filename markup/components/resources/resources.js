@@ -23,7 +23,7 @@ $.ajax('http://tor-obr.ru/api/category', {
             const category = categories.find(category=>category.id==item.category_id)
             const resource = $(`<a class="resource" href="/resource.html?id=${item.id}" data-category_id=${category.id} data-id=${item.id} style="background-color:${category.color}" data-age_min=${item.age_min} data-age_max=${item.age_max}>
                                     <div class="resource__header">
-                                        <img class="resource__icon" src="${category.icon}">
+                                        <img class="resource__icon" src="${vars.host+category.icon}">
                                         <div class="resource__age">Возраст: ${item.age_min}-${item.age_max}</div>
                                     </div>
                                     <div class="resource__title">${item.name}</div>
@@ -38,7 +38,7 @@ $.ajax('http://tor-obr.ru/api/category', {
     categories.forEach(item => {
         const category = $(`<div class="category" data-id="${item.id}" style="background-color:${item.color}">
                                 <div class="category__title">${item.name}</div>
-                                <img class="category__icon" src="${vars.host+item.src}">
+                                <img class="category__icon" src="${vars.host+item.icon}">
                             </div>`);
         $('.categories__container').append(category);
     });
@@ -70,7 +70,7 @@ $('.resources__search-button').click(() => {
         if(query && item.children('.resource__title').text().toUpperCase().indexOf(query.toUpperCase())  == -1) {
             item.hide();
         }
-        if(age_min && item.data('age_min') < age_min) {
+        if(age_min && item.data('age_min') < age_min && item.data('age_max') < age_min) {
             item.hide();
         }
         if(age_max && item.data('age_max')  > age_max) {

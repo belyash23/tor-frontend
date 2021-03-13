@@ -13,6 +13,11 @@
         display: block;
     }
 }
+@media screen and (max-height: 880px) {
+    .resources {
+        min-height: calc(100vh - #{$header-height} + 30px - #{$footer-height} + 30px);
+    }
+}
 .categories {
     &__title {
         @include base-block;
@@ -130,6 +135,7 @@
             width: 30px;
             height: 30px;
             border-radius: 10px;
+            background: hsl(0, 0%, 100%);
         }
         &__age {
             margin-left: 15px;
