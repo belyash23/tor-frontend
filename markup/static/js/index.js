@@ -1,2 +1,2 @@
 'use strict';
-import('components/support-window/support-window');
+import('components/header/header');
