@@ -1,0 +1,107 @@
+main {
+    background: url('%=static=%/general/background1.png') no-repeat;
+    background-position: center;
+    padding: 1px;
+}
+@media screen and(max-width: 480px) {
+    main {
+        background: url('%=static=%/general/background.png') repeat;
+    }
+}
+.main-description {
+    color: hsl(0, 0%, 100%);
+    margin: 15vh auto;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    font-size: 1.4em;
+    line-height: 1.3em;
+}
+.main-description__item {
+    width: 100px;
+}
+.main-description__item:nth-child(2) {
+    margin-top: 100px;
+}
+@media screen and(max-width: 480px) {
+    .main-description {
+        flex-direction: column;
+        max-width: 220px;
+        margin-top: 100px;
+    }
+    .main-description__item {
+        @include base-block;
+        width: 200px;
+        height: 90px;
+        margin-top: 50px;
+        display: table
+    }
+    .main-description__item p {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .main-description__item:before {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+    .main-description__item:nth-child(2) {
+        margin-top: 50px;
+    }
+}
+.main-directions {
+    margin-top: 100px;
+    color: hsl(0, 0%, 100%);
+}
+.main-directions__title {
+    font-size: 2em;
+    margin: 0px auto;
+    width: 230px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    background: $base-green;
+}
+.main-directions__container {
+    margin: 30px auto;
+    display: flex;
+    max-width: 800px;
+    justify-content: space-around;
+}
+.main-direction {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: $base-green;
+}
+.main-direction__title {
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto 0px auto;
+}
+.main-direction__icon {
+    display: block;
+    margin: 20px auto;
+    max-height: 100px;
+}
+.go-to-directions {
+    display: block;
+    margin: 40px auto;
+    width: 350px;
+    @include base-block;
+    font-size: 1.7em;
+}
+@media screen and(max-width: 480px) {
+    .main-directions {
+        color: hsl(0, 0%, 100%);
+    }
+    .main-directions__container {
+        flex-direction: column;
+        width: 200px;
+    }
+    .main-direction {
+        margin-top: 30px;
+    }
+}

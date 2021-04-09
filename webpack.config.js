@@ -120,7 +120,10 @@ module.exports = {
     mode: webpackMode,
     // We have to add some pathes to entry point in case of using HMR
     entry: prepareEntryPoints({
-        index: path.resolve(`${cwd}/markup/${staticFolderName}/js/index.js`)
+        index: path.resolve(`${cwd}/markup/${staticFolderName}/js/index.js`),
+        directions: path.resolve(`${cwd}/markup/${staticFolderName}/js/directions.js`),
+        resource: path.resolve(`${cwd}/markup/${staticFolderName}/js/resource.js`),
+        resources: path.resolve(`${cwd}/markup/${staticFolderName}/js/resources.js`)
     }),
 
     output: {

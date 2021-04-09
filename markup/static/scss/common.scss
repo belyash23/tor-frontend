@@ -1,4 +1,10 @@
-// Common styles of the project
+* {
+    font-family: Roboto;
+}
+a.disabled {
+    pointer-events: none;
+    filter: brightness(70%);
+}
 
 html, body {
     height: 100%;

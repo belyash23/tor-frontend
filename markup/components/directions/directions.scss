@@ -1,0 +1,84 @@
+.directions {
+    height: calc(100vh - #{$header-height} - #{$footer-height});
+    display: flex;
+    position: relative;
+}
+.directions-sidebar {
+    background: $base-green;
+    width: calc(130px + 10%*0.5);
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.directions-sidebar__title {
+    font-size: 1.5em;
+}
+.direction-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 110px;
+}
+.direction-card__title {
+    font-size: 1.2em;
+}
+.directions-sidebar__direction-card {
+    margin-top: 20px;
+}
+.direction-card__icon {
+    height: 60px;
+    margin-top: 10px;
+}
+.direction-info {
+    width: calc(100% - (130px + 10%*0.5));
+    background: url('%=static=%/general/background.png');
+    background-repeat: repeat;
+}
+.direction-info__description {
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 10%;
+    max-width: 500px;
+    line-height: 1.5em;
+}
+.direction-info__images {
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.direction-info__image {
+    width: 275px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.direction-info__to-resources {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    color: hsl(0, 0%, 100%);
+    background: $base-green;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+@media screen and (max-height: 880px) {
+    .directions {
+        height: calc(100vh - #{$header-height} + 30px - #{$footer-height} + 30px);
+    }
+    .direction-info__image {
+        width: 240px;
+        margin-top: 20px;
+    }
+    .direction-info__to-resources {
+        bottom: 15px;
+    }
+}
